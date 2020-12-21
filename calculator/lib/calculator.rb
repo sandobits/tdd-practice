@@ -1,5 +1,5 @@
 class Calculator
-  def self.sum(a, b)
+  def sum(a, b)
     return (a+b).round(2)
   end
 end
