@@ -20,7 +20,7 @@ describe Calculator, 'Classe Calculadora para 2 algarismos' do
       expect(result).to eql(-11)
     end
 
-    it 'with floating point numbers' do # temporarily skipped (not on scope)
+    it 'with floating point numbers' do
       result = subject.sum(5.2, 6.4)
       expect(result).to eql(11.6)
     end
