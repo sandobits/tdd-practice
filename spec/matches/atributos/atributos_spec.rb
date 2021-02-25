@@ -1,9 +1,9 @@
-require './lib/pessoa.rb'
+require './lib/pessoa'
 
 describe Pessoa do
   subject = Pessoa.new('sandola', 30)
   it 'verifies Pessoa mount options' do
-    expect(subject).to be_instance_of(Pessoa)    
+    expect(subject).to be_instance_of(Pessoa)
   end
 
   it '#have_attributes - verifies attr values' do
