@@ -3,6 +3,12 @@
 require './lib/pessoa'
 
 describe Pessoa do
+  around(:each) do |test|
+    puts ':each hook - before'
+    test.run
+    puts ':each hook - after'
+  end
+
   subject = Pessoa.new('sandola', 30)
   it 'verifies Pessoa mount options' do
     expect(subject).to be_instance_of(Pessoa)
