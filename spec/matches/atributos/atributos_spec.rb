@@ -4,9 +4,9 @@ require './lib/pessoa'
 
 describe Pessoa do
   around(:each) do |test|
-    puts ':each hook - before'
+    puts '#################### :each hook - before ####################'
     test.run
-    puts ':each hook - after'
+    puts '#################### :each hook - after ####################'
   end
 
   subject = Pessoa.new('sandola', 30)
